@@ -28,6 +28,28 @@ app.use('/public', express.static('public'));
 
 //INSERT ROUTES HERE
 
+//home page
+app.get('/Home', (req, res) => {
+    res.render('home')
+})
+
+
+//about us page
+app.get('/AboutUs', (req, res) => {
+    res.render('aboutUs')
+})
+
+//explore the world page
+app.get('/Explore', (req, res) => {
+    res.render('explore')
+})
+
+//contact us/connect with us page
+app.get('/Contact', (req, res) => {
+    res.render('contact')
+})
+
+
 
 //Set the catch all 404 error handler
 app.all('*', (req, res, next) => {
