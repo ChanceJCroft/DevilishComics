@@ -14,7 +14,7 @@
         body {height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://hdwallsource.com/img/2014/5/desert-fantasy-wallpaper-16495-17033-hd-wallpapers.jpg");
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
     box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);}
@@ -37,17 +37,19 @@
                 </nav>
             </div>
         </header>
+        <h3>Meet the Team</h3>
+        <br>
         <main class="px-3">
             <div style="max-width: 65%; justify-content: center; align-content: center; margin: auto; border: .5px solid grey; background-color: antiquewhite;">
                 <div id="buttonDiv" style="flex-direction: row; justify-content: space-evenly;">
-                    <button class="abtBtn" style="margin:0; width:22%; display:inline-block; background-color: antiquewhite; border:none;">Writers</button>
-                    <button class="abtBtn" style="margin:0; width:22%; display:inline-block; background-color: antiquewhite; border:none;">Illustrators</button>
-                    <button class="abtBtn" style="margin:0; width:22%; display:inline-block; background-color: antiquewhite; border:none;">Editors</button>
-                    <button class="abtBtn" style="margin:0; width:22%; display:inline-block; background-color: antiquewhite; border:none;">Special Thanks</button> 
+                    <button onclick="changeWriter()" class="btn" style="margin:0; width:22%; display:inline-block; background-color: antiquewhite; border:none;">Writers</button>
+                    <button onclick="changeIllus()" class="btn" style="margin:0; width:22%; display:inline-block; background-color: antiquewhite; border:none;">Illustrators</button>
+                    <button onclick="changeEditor()" class="btn" style="margin:0; width:22%; display:inline-block; background-color: antiquewhite; border:none;">Editors</button>
+                    <button onclick="changeOther()" class="btn" style="margin:0; width:22%; display:inline-block; background-color: antiquewhite; border:none;">Special Thanks</button> 
                 </div>
                 
                 <br>
-                <small style="color: black;">
+                <small id="aboutStaff" style="color: black;">
                 This will be a place where we have information about all the members.
                 </small>
             </div>
@@ -67,6 +69,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
         integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
         crossorigin="anonymous"></script>
+    <script src="../public/aboutUsScript.js"></script>
 </body>
 
 </html>
