@@ -1,0 +1,13 @@
+.btn:hover {
+    opacity: 50%;
+    background-color: green;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .aboutUs {
+      padding: 10px;
+  }
