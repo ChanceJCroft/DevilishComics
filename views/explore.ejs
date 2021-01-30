@@ -11,21 +11,21 @@
     integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="../public/assets/home.css" type="text/css">
     <style>
-        body {height: auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        body {height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.0)),
     url("https://hdwallsource.com/img/2014/5/desert-fantasy-wallpaper-16495-17033-hd-wallpapers.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
-    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);}
+    background-position: auto;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.0);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.0);}
             a {
                 color:antiquewhite;
             }
     </style>
 </head>
 
-<body class="d-flex text-center text-white bg-dark">
+<body class="d-flex text-center text-white">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="mb-auto">
             <div>
@@ -41,16 +41,25 @@
         <br>
         <br>
         <main class="px-3">
-            <h1 style="font-family: 'Potta One', cursive;">Explore the deserts of Rune</h1>
+            <h1 style="font-family: 'Potta One', cursive;">Meet the Characters</h1>
             <br>
-        <div style="max-width: 75%; align-content: center; margin: auto;">
-            <img src="../public/img/Title Panel.png">
-            <br>
-            <small>
-                Join the three siblings on an adventure to find their father's lost crown and save a nation in distress.
-            </small>
-            <br>
-        </div>
+            <div class="card mb-3" style="max-width: 50%; justify-content: center; margin: auto;">
+                <img class="card-img-top" src="../public/img/person.jpg" alt="Card image cap" style="max-width: 100%; height: auto;">
+                <div class="card-body bg-dark">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Select a Character</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Roysa</option>
+                          <option>Ohim</option>
+                          <option>Zuoh</option>
+                          <option>Celeste</option>
+                          <option>Rizoh</option>
+                        </select>
+                      </div>
+                  <h5 class="card-title">Character Name</h5>
+                  <p class="card-text">Information about the selected character goes here.</p>
+                </div>
+              </div>
         </main>
 
         <footer class="mt-auto text-white-50">
