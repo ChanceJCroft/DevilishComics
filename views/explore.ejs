@@ -49,19 +49,20 @@
             <h1 style="font-family: 'Potta One', cursive;">Meet the Characters</h1>
             <br>
             <div class="card mb-3" style="max-width: 50%; justify-content: center; margin: auto;">
-                <img class="card-img-top" src="../public/img/person.jpg" alt="Card image cap" style="max-width: 100%; height: auto;">
+                <img class="card-img-top" id="charImg" src="../public/img/player select.jpg" alt="Card image cap" style="max-width: 100%; height: auto; display: block;">
                 <div class="card-body bg-dark">
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Select a Character</label>
-                        <select class="form-control" id="target">
-                          <option value="content_1" selected="selected">Roysa</option>
+                        <select class="form-control" id="target" value="Choose a Character" onchange="changePicture()">
+                          <option value="content_0" disabled="true" selected="true">Select a Character</option>
+                          <option value="content_1">Roysa</option>
                           <option value="content_2">Ohim</option>
                           <option value="content_3">Zuoh</option>
                           <option value="content_4">Celeste</option>
                           <option value="content_5">Rizoh</option>
                         </select>
                       </div>
-                <div id="content_1" class="vis">
+                <div id="content_1" class="inv">
                     <h5 class="card-title">Roysa</h5>
                   <p class="card-text">Roysa is a sexy white devil mystic.</p>
                 </div>
@@ -113,6 +114,24 @@
                         target.className = 'vis';
                     }
             });
+
+            let charImg = document.getElementById('charImg');
+
+            let targetOptions = document.getElementById('target');
+            
+            function changePicture() {
+                if(targetOptions.value == "content_1") {
+                charImg.src = "../public/img/person.jpg";
+            } else if (targetOptions.value == "content_2") {
+                charImg.src = "../public/img/person.jpg";
+            } else if (targetOptions.value == "content_3") {
+                charImg.src = "../public/img/Zuoh Character Card.jpg";
+            } else if (targetOptions.value == "content_4") {
+                charImg.src = "../public/img/Celeste Character Card.jpg";
+            } else if (targetOptions.value == "content_5") {
+                charImg.src = "../public/img/Rizoh Character Card.jpg";
+            }
+        }
     </script>
 </body>
 
